@@ -1,0 +1,17 @@
+# Config layer contributed by the dsh-workflow-orchestrator bundle.
+# `name` is the package name so Node resolves it from the profile's node_modules.
+- insert:
+    - id: workflow-orchestrator
+      name: dsh-workflow-orchestrator
+      config:
+        toolPrefix: workflow
+        enableTools: true
+        allowMutations: true
+        maxIterations: 100
+        maxParallelBranches: 8
+        maxDelayMs: 60000
+        httpTimeoutMs: 10000
+        maxWorkflows: 100
+        maxHistory: 50
+        persistencePath: ''
+        emitEvents: true
